@@ -1,0 +1,27 @@
+{
+	"suggest.noselect": false,
+	"coc.preferences.formatOnSaveFiletypes": [
+		"javascript",
+		"typescript",
+		"typescriptreact",
+		"json",
+		"javascriptreact",
+		"typescript.tsx",
+		"ruby",
+		"rust",
+		"lua-language-server"
+	],
+	"snippets.ultisnips.pythonPrompt": false,
+	"eslint.enable": true,
+	"eslint.packageManager": "npm",
+	"eslint.autoFixOnSave": true,
+	"eslint.validate": [
+		"javascript",
+		"javascriptreact",
+		"typescript",
+		"typescriptreact"
+  ],
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  }
+}
