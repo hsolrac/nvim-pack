@@ -32,6 +32,7 @@ vim.g.coc_global_extensions = {
   'coc-json',
   'coc-solargraph',
   'coc-rust-analyzer',
+	'coc-elixir'
 }
 
 vim.cmd("filetype plugin indent on")
@@ -55,15 +56,17 @@ vim.pack.add({
   { src = "https://github.com/akinsho/bufferline.nvim" },
   { src = "https://github.com/nvim-lualine/lualine.nvim" },
   { src = "https://github.com/lukas-reineke/indent-blankline.nvim" },
+	{ src = "https://github.com/nvim-treesitter/nvim-treesitter" },
+	{ src = "https://github.com/elixir-lsp/coc-elixir" }
 })
 
-vim.keymap.set('n', '<C-l>', ':Exp<CR>')
-vim.keymap.set('n', '<leader>ev', ':vsplit ~/.config/nvim/init.lua<CR>')
+vim.keymap.set('n', '<leader>e', ':Exp<CR>')
+vim.keymap.set('n', '<leader>cf', ':vsplit ~/.config/nvim/init.lua<CR>')
 vim.keymap.set('n', '<leader>cr', ':CocRestart<CR>')
 vim.keymap.set('n', '<leader>s', ':source%<CR>')
 vim.keymap.set('n', '<C-s>', ':w!<CR>')
 vim.keymap.set('n', '<C-q>', ':bd<CR>')
-vim.keymap.set('n', '<C-p>', ':Files<CR>')
+vim.keymap.set('n', '<leader>ff', ':Files<CR>')
 vim.keymap.set('n', '<C-f>', ':Rg<CR>')
 vim.keymap.set('n', '<C-r>', ':vsplit<CR>')
 vim.keymap.set('n', '<S-h>', ':bprev<CR>')

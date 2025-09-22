@@ -1,15 +1,6 @@
 {
 	"suggest.noselect": false,
 	"coc.preferences.formatOnSaveFiletypes": [
-		"javascript",
-		"typescript",
-		"typescriptreact",
-		"json",
-		"javascriptreact",
-		"typescript.tsx",
-		"ruby",
-		"rust",
-		"lua-language-server"
 	],
 	"snippets.ultisnips.pythonPrompt": false,
 	"eslint.enable": true,
@@ -23,5 +14,6 @@
   ],
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
-  }
+  },
+	"elixir.pathToElixirLS": "~/.elixir-ls/release/language_server.sh"
 }
